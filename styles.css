@@ -173,3 +173,19 @@ button { font: inherit; }
   .raffle-card { padding: 26px; }
   .floating-whatsapp { width: 54px; height: 54px; right: 14px; bottom: 14px; }
 }
+
+/* Corrección de contraste: botón WhatsApp en la franja naranja */
+.cta-band .btn-dark,
+.cta-band .btn-dark:link,
+.cta-band .btn-dark:visited {
+  background: #050505;
+  color: #ffffff !important;
+  border-color: #ffffff;
+}
+
+.cta-band .btn-dark:hover,
+.cta-band .btn-dark:active,
+.cta-band .btn-dark:focus-visible {
+  background: #111111;
+  color: #ff6a00 !important;
+}
