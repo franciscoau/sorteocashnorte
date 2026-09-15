@@ -135,7 +135,7 @@ button { font: inherit; }
 .footer-note { border-left: 2px solid var(--orange); padding-left: 18px; }
 .footer-bottom { margin-top: 34px; padding-top: 20px; border-top: 1px solid var(--line); color: #888; font-size: .84rem; }
 
-.floating-whatsapp { position: fixed; right: 22px; bottom: 22px; z-index: 45; width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; background: #25D366; color: #fff; font-size: 1.6rem; box-shadow: 0 16px 34px rgba(0,0,0,.35); border: 3px solid rgba(255,255,255,.75); }
+.floating-whatsapp { position: fixed; left: 22px; right: auto; bottom: 22px; z-index: 45; width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; background: #25D366; color: #fff; font-size: 1.6rem; box-shadow: 0 16px 34px rgba(0,0,0,.35); border: 3px solid rgba(255,255,255,.75); }
 
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .65s ease, transform .65s ease; }
 .reveal.show { opacity: 1; transform: translateY(0); }
@@ -171,18 +171,21 @@ button { font: inherit; }
   .section { padding: 68px 0; }
   .spec-grid, .steps-grid { grid-template-columns: 1fr; }
   .raffle-card { padding: 26px; }
-  .floating-whatsapp { width: 54px; height: 54px; right: 14px; bottom: 14px; }
+  .floating-whatsapp { width: 54px; height: 54px; left: 14px; right: auto; bottom: 14px; }
 }
 
-
-/* Fix: botón WhatsApp sobre franja naranja */
+/* Corrección de contraste: botón WhatsApp en la franja naranja */
 .cta-band .btn-dark,
 .cta-band .btn-dark:link,
 .cta-band .btn-dark:visited {
   background: #050505;
   color: #ffffff !important;
+  border-color: #ffffff;
 }
+
 .cta-band .btn-dark:hover,
-.cta-band .btn-dark:active {
+.cta-band .btn-dark:active,
+.cta-band .btn-dark:focus-visible {
+  background: #111111;
   color: #ff6a00 !important;
 }
