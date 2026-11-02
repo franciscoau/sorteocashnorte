@@ -4,7 +4,7 @@
 const CONFIG = {
   whatsappNumber: '56931715777', // Ejemplo Chile: 56912345678 (sin +, espacios ni guiones)
   whatsappMessage: 'Hola Cash Norte Cl 👋 Quiero información para participar en el sorteo del Xiaomi Electric Scooter 6.',
-  raffleDate: '15 de noviembre de 2026'
+  raffleDate: '23 de diciembre de 2026'
 };
 
 const whatsappButtons = document.querySelectorAll('.js-whatsapp');
